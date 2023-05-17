@@ -1,0 +1,22 @@
+let current: ptr <: project_ptr;
+
+(**u8(current)). <: c"project"; // name
+
+current <: current + sizeof *u8;
+
+(*u32(current)). <: 2; // kind
+
+current <: current 
+         + sizeof []*u8 
+         + sizeof []*u8 
+         + sizeof []*u8 
+         + sizeof []*u8 
+         + sizeof []*u8 
+         + sizeof []*u8 
+         + sizeof u32 
+         + sizeof bool 
+         + sizeof bool 
+         + sizeof bool 
+         + sizeof bool;
+
+(*bool(current)). <: true; // std_excluded
