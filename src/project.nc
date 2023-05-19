@@ -1,17 +1,17 @@
 /*
  * An executable.
  */
-public const Executable: u32 := 1;
+public const Executable: u32 := 1:32;
 
 /*
  * A package that can be a dependency.
  */
-public const Package: u32 := 2;
+public const Package: u32 := 2:32;
 
 /*
  * A library.
  */
-public const Library: u32 := 3;
+public const Library: u32 := 3:32;
 
 /*
  * Describes an project.
